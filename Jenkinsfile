@@ -8,7 +8,7 @@ pipeline {
             steps {	
 		sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=asecuritywebapp -Dsonar.organization=asecuritywebapp -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=1841fa0b3e3ad5e8e02d01e1265b9123e8b89862'
 			}
- }
+    }
 
 	stage('RunSCAAnalysisUsingSnyk') {
             steps {		
